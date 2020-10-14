@@ -52,12 +52,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>cact-I + cact-you = cact-us</title>
+    <title>The Cactus Shop</title>
   </head>
 
   <body>
     <header>
-      <h1>cact-I + cact-you = cact-us</h1>
+      <h1>The Cactus Shop</h1>
       <!-- Ideas: making it pretty/look real, making it look reliable,
           choosing different images, changing layout, etc. Show your creativity!
           We want to see meaningful differences -->
@@ -70,7 +70,7 @@
     <!-- If you add any new buttons, you need to update the javascript file, for
     corresponding button id, so that clicks of that button could be logged -->
     <div class="content-pane">
-      <div class="vendor-wrapper" id="mp1">
+      <div class="vendor-wrapper-a" id="mp1">
         <img src="../static/coppercombo.png" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">
           Add To Cart
@@ -81,7 +81,7 @@
         </p>
       </div>
 
-      <div class="vendor-wrapper" id="mp2">
+      <div class="vendor-wrapper-a" id="mp2">
         <img src="../static/geoprickly.jpg" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">
           Add To Cart
@@ -91,7 +91,7 @@
         </p>
       </div>
 
-      <div class="vendor-wrapper" id="mp3">
+      <div class="vendor-wrapper-a" id="mp3">
         <img src="../static/garden.jpg" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">
           Add To Cart
@@ -101,7 +101,7 @@
         </p>
       </div>
 
-      <div class="vendor-wrapper" id="mp4">
+      <div class="vendor-wrapper-a" id="mp4">
         <img src="../static/garden-combo.jpg" class="vendor-photo" />
         <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">
           Add To Cart
@@ -187,7 +187,7 @@
         function navigateToCheckout() {
           // Send number of items in cart to checkout page through URL params.
           params = 'version=A';
-          Array.from(document.getElementsByClassName('vendor-wrapper')).forEach(el => {
+          Array.from(document.getElementsByClassName('vendor-wrapper-a')).forEach(el => {
             numInCart = parseInt(document.getElementById(el.id + '-added').textContent, 0);
             params += ('&' + el.id + '=' + numInCart)
           })

@@ -15,10 +15,24 @@ header {
 	padding-bottom: 20px;
 }
 
+.vendor-wrapper-a {
+  justify-content: right;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: groove;
+}
+
 .vendor-photo {
 	max-width: 200px;
 	max-height: 150px;
 	padding-right: 20px;
+}
+
+.vendor-photo-b {
+  max-width: 300px;
+  max-height: 250px;
+  padding-right: 20px;
 }
 
 .vendor-book-button {
